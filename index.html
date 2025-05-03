@@ -1,23 +1,110 @@
+<!-- Unit 12 Project
+Requirements
+[  ] $() Select by Element, ID AND Class 
+[  ] Use Three Different jQuery Methods 
+[  ] Add Five CSS Declarations
+[  ] Include Three Images
+
+Select ONE Additional 
+[ no ] Feature 1 - Use .addClass() method
+[ no ] Feature 2 - Use a variable in javaScript 
+[ no ] Feature 3 - Use .mouseover() method
+[ no ] Feature 4 - Use .show() method
+[ no ] Feature 5 - Use .append() method
+-->
+
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Unit 12 Lessons</title>
+    <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-           <h1>Creature Creator</h1>
-        
-        <p>What happens when you combine these two animals?</p>
-        <img src="https://www.kasandbox.org/programming-images/animals/shark.png" height="150" alt="shark">
-        <img src="https://www.kasandbox.org/programming-images/animals/spider.png" height="150" alt="spider">
-        
-        <p class="result">You get a sharkspider!</p>
+    <button id="mem1-button">Memory #1</button>
+    <button id="mem2-button">Memory #2</button>
+    <button id="mem3-button">Memory #3</button>
+    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <ol>
+      <li>
+        <h3 id="mem1">Celebration of another year </h3>
+        <p>Celebrating another year is the start of a new chapter. I take a new chapter as a new beginning. Turning a year older makes me continuolsy remember to value life. </p>
+      </li>
+
+      <li>
+        <h3 id="mem2">Awarded one of the "YoungArts Winners"</h3>
+        <p>Being awarded the title as 2025 YoungArts Winner in Modern/Contemporary Dance has been a major highlight of my year. To have this feeling where your art form is being recognized is wholesome.I am grateful to have been supported ny many individuals. </p>
+      </li>
+
+      <li>
+        <h3 id="mem3">Senior Year</h3>
+        <p>As my last year of highschool is coming to an end it's important to create core memories with the people that have made an impact within your highschool years. I cherish Senior year as its my last chapter of highschool. With one month left I hope to continue to make memories with the people I choose to surrond myself by. As well as hope we cross paths in the future. I am ready to close this book and move onto the next chapter of my life. </p>
+      </li>
+    </ol>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script>
- 
+    
+  <script>
+    
+       $("h1").mouseover(function () {
+
+        $("h1").css("color", "purple");
+
+      });
+
+
+      $("#gr").mouseover(function () {
+
+        $("#gr").css("color", "purple");
+
+        $("#gr").text("it was really good");
+
+      });
+
+
+      $(".sh").mouseover(function () {
+
+        $(".sh").css("color", "purple");
+        
+        $(".sh").mouseover(function () {
+
+        $(".sh").css("color", "purple");
+
+        $(".sh").html("his <strong> choreography </strong> is phenomenal");
+
+      });
+
+    </script>
+
+
+    <img
+
+      src="https://ih1.redbubble.net/image.2525901178.9960/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+
+    />
+
+
+    <img
+
+      src="https://cdn.glitch.global/e30b26a1-21e6-4394-86f5-e2630f628344/IMG_0326.jpeg?v=1746238043570"
+
+    />
+
+    <img
+
+      src="https://i.pinimg.com/1200x/25/dc/38/25dc38b7d7b906c216392d88d19422c0.jpg"
+
+    />
+
+
+  </body>
+
+</html>
+
+    
     </script>
   </body>
 </html>
 
-<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery https://www.khanacademy.org/computing/computer-programming/html-js-jquery-->
+<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
